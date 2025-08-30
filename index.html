@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Snake — Simple Web Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="wrap">
+    <h1>🐍 Snake</h1>
+
+    <div class="top-row">
+      <div class="score">Score: <span id="score">0</span></div>
+      <div class="controls">
+        <button id="btn-start">Start</button>
+        <button id="btn-pause">Pause</button>
+        <button id="btn-reset">Reset</button>
+      </div>
+    </div>
+
+    <div class="game-area">
+      <canvas id="game" width="400" height="400"></canvas>
+    </div>
+
+    <div class="info">
+      <p>Use arrow keys or WASD to move. Eat the red food to grow. Don't hit the wall or yourself.</p>
+      <p>Mobile: tap arrows shown below.</p>
+    </div>
+
+    <div class="mobile-controls" id="mobile-controls">
+      <button data-dir="up">▲</button>
+      <div>
+        <button data-dir="left">◀</button>
+        <button data-dir="down">▼</button>
+        <button data-dir="right">▶</button>
+      </div>
+    </div>
+
+    <footer class="credits">
+      <small>Built with HTML/CSS/JS — can host on GitHub Pages or Netlify.</small>
+    </footer>
+  </main>
+
+  <script src="game.js"></script>
+</body>
+</html>
