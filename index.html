@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Flappy Bird — Simple</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="wrap">
+    <h1>🐦 Flappy Bird (Simple)</h1>
+
+    <div class="hud">
+      <div class="score">Score: <span id="score">0</span></div>
+      <div class="best">Best: <span id="best">0</span></div>
+    </div>
+
+    <div class="game-area">
+      <canvas id="game" width="480" height="640"></canvas>
+      <div class="mobile-controls" id="tapArea">TAP / CLICK</div>
+    </div>
+
+    <div class="controls">
+      <button id="btn-start">Start</button>
+      <button id="btn-restart" style="display:none">Restart</button>
+    </div>
+
+    <p class="tip">Use Space / Click / Tap to flap</p>
+  </main>
+
+  <script src="game.js"></script>
+</body>
+</html>
